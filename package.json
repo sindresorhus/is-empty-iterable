@@ -1,6 +1,6 @@
 {
   "name": "is-empty-iterable",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if an Iterable is empty",
   "license": "MIT",
   "repository": "sindresorhus/is-empty-iterable",
