@@ -1,0 +1,39 @@
+{
+  "name": "is-empty-iterable",
+  "version": "0.0.0",
+  "description": "Check if an Iterable is empty",
+  "license": "MIT",
+  "repository": "sindresorhus/is-empty-iterable",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "iterable",
+    "empty",
+    "iterables",
+    "array",
+    "size",
+    "length",
+    "list",
+    "is",
+    "check"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
