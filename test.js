@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from './';
+import isEmptyIterable from '.';
 
-test(t => {
+test('main', t => {
 	const iterable = {};
 	iterable[Symbol.iterator] = function * () {
 		yield 1;
@@ -10,10 +10,10 @@ test(t => {
 	const emptyIterable = {};
 	emptyIterable[Symbol.iterator] = function * () {};
 
-	t.true(m(emptyIterable));
-	t.true(m([]));
-	t.true(m(new Set([])));
-	t.false(m(iterable));
-	t.false(m([1, 2]));
-	t.false(m(new Set([1, 2])));
+	t.true(isEmptyIterable(emptyIterable));
+	t.true(isEmptyIterable([]));
+	t.true(isEmptyIterable(new Set([])));
+	t.false(isEmptyIterable(iterable));
+	t.false(isEmptyIterable([1, 2]));
+	t.false(isEmptyIterable(new Set([1, 2])));
 });
