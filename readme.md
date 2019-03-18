@@ -8,7 +8,7 @@ More efficient than `Array.from(iterable).length`, as it only iterates the first
 ## Install
 
 ```
-$ npm install --save is-empty-iterable
+$ npm install is-empty-iterable
 ```
 
 
@@ -27,11 +27,11 @@ isEmptyIterable(new Set([1, 2]));
 
 ## API
 
-### isEmptyIterable(input)
+### isEmptyIterable(iterable)
 
 Returns a `boolean`.
 
-#### input
+#### iterable
 
 Type: `Iterable`
 
