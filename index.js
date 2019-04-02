@@ -9,4 +9,5 @@ const isEmptyIterable = iterable => {
 };
 
 module.exports = isEmptyIterable;
+// TODO: Remove this for the next major release
 module.exports.default = isEmptyIterable;
