@@ -1,4 +1,4 @@
-# is-empty-iterable [![Build Status](https://travis-ci.org/sindresorhus/is-empty-iterable.svg?branch=master)](https://travis-ci.org/sindresorhus/is-empty-iterable)
+# is-empty-iterable
 
 > Check if an `Iterable` is empty
 
