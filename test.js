@@ -1,5 +1,5 @@
 import test from 'ava';
-import isEmptyIterable from '.';
+import isEmptyIterable from './index.js';
 
 test('main', t => {
 	const iterable = {};

@@ -4,18 +4,16 @@
 
 More efficient than `Array.from(iterable).length`, as it only iterates the first item, which can make a big difference for dynamic iterators, like a `Generator` doing an expensive operation.
 
-
 ## Install
 
 ```
 $ npm install is-empty-iterable
 ```
 
-
 ## Usage
 
 ```js
-const isEmptyIterable = require('is-empty-iterable');
+import isEmptyIterable from 'is-empty-iterable';
 
 isEmptyIterable([]);
 //=> true
@@ -23,7 +21,6 @@ isEmptyIterable([]);
 isEmptyIterable(new Set([1, 2]));
 //=> false
 ```
-
 
 ## API
 
@@ -34,8 +31,3 @@ Returns a `boolean`.
 #### iterable
 
 Type: `Iterable`
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
