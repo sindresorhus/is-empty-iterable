@@ -6,8 +6,8 @@ More efficient than `Array.from(iterable).length`, as it only iterates the first
 
 ## Install
 
-```
-$ npm install is-empty-iterable
+```sh
+npm install is-empty-iterable
 ```
 
 ## Usage
