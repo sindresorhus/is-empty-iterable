@@ -31,3 +31,37 @@ Returns a `boolean`.
 #### iterable
 
 Type: `Iterable`
+
+## Note
+
+When using with generators, be aware that generators are consumed after being iterated. This means calling `isEmptyIterable()` on the same generator instance multiple times will return different results:
+
+```js
+function* myGenerator() {
+	yield 1;
+	yield 2;
+}
+
+const generator = myGenerator();
+
+isEmptyIterable(generator);
+//=> false
+
+isEmptyIterable(generator); // Generator is now consumed
+//=> true
+```
+
+If you need to check the same generator multiple times, create a new generator instance for each check:
+
+```js
+function* myGenerator() {
+	yield 1;
+	yield 2;
+}
+
+isEmptyIterable(myGenerator());
+//=> false
+
+isEmptyIterable(myGenerator());
+//=> false
+```
